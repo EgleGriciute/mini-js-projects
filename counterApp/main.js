@@ -1,4 +1,4 @@
-// Select DOM elements
+// Select DOM elements:
 const counter = document.querySelector(".count");
 const allBtns = document.querySelectorAll(".buttonsContainer");
 
