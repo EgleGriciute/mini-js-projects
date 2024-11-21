@@ -1,4 +1,4 @@
-//  Select input and copy button elements from DOM
+//  Select input and copy button elements from DOM:
 
 const copyBtn = document.querySelector(".btn");
 const inputText = document.querySelector("input");
