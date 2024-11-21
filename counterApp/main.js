@@ -24,7 +24,7 @@ function updateCounterColor() {
   }
 }
 
-// ExecutE functionality:
+// Execute functionality:
 
 subtractBtn.addEventListener("click", () => {
   counter.textContent--;
