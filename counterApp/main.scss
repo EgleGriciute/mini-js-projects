@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$lightColor: #005490;
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+section.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .counterAppContainer {
+    background-color: $lightColor;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+
+    h1 {
+      color: white;
+      font-size: 2rem;
+    }
+
+    span {
+      color: white;
+      font-size: 2rem;
+    }
+
+    hr {
+      width: 90%;
+    }
+
+    button {
+      padding: 10px 10px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .buttonsContainer {
+      display: flex;
+      gap: 15px;
+
+      .subtract {
+        background-color: orangered;
+      }
+
+      .reset {
+        background-color: white;
+        color: black;
+      }
+
+      .add {
+        background-color: limegreen;
+      }
+    }
+  }
+}

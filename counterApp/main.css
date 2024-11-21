@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+section.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section.mainContainer .counterAppContainer {
+  background-color: #005490;
+  width: 500px;
+  height: 250px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+}
+section.mainContainer .counterAppContainer h1 {
+  color: white;
+  font-size: 2rem;
+}
+section.mainContainer .counterAppContainer span {
+  color: white;
+  font-size: 2rem;
+}
+section.mainContainer .counterAppContainer hr {
+  width: 90%;
+}
+section.mainContainer .counterAppContainer button {
+  padding: 10px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+section.mainContainer .counterAppContainer .buttonsContainer {
+  display: flex;
+  gap: 15px;
+}
+section.mainContainer .counterAppContainer .buttonsContainer .subtract {
+  background-color: orangered;
+}
+section.mainContainer .counterAppContainer .buttonsContainer .reset {
+  background-color: white;
+  color: black;
+}
+section.mainContainer .counterAppContainer .buttonsContainer .add {
+  background-color: limegreen;
+}/*# sourceMappingURL=main.css.map */
