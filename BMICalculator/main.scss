@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+$backgroundColor: #005390;
+$accentColor: #db6502;
+$fontColor: #fff;
+$btnColor: #9d0191;
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 3em;
+  text-indent: 1em;
+}
+
+.changeTableStyle {
+  width: 113.5%;
+  margin-left: -1.5em;
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+}
+
+.hideContent {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+main {
+  height: 100vh;
+  .calculatorContainer {
+    flex-direction: column;
+    background-color: $backgroundColor;
+    height: 20em;
+    width: 25em;
+    padding: 2em 1.5em 1.5em 1.5em;
+    .calculatroHeader {
+      color: $fontColor;
+      font-size: 1em;
+      margin-bottom: 1em;
+      text-align: center;
+
+      hr {
+        width: 100%;
+      }
+    }
+    .calculatorBody {
+      .calculatorBody-height {
+        color: $fontColor;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1em;
+      }
+      .calculatorBody-weight {
+        color: $fontColor;
+        display: flex;
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+        background-color: $accentColor;
+        border: none;
+        color: $fontColor;
+        padding: 0.8em;
+        border-radius: 0.4em;
+        margin: 1em 0em;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        font-size: 0.95em;
+
+        &:hover {
+          background-color: $btnColor;
+        }
+      }
+    }
+
+    .calculatorFooter {
+      background-color: $backgroundColor;
+
+      .calculatorFooter-default {
+        color: $fontColor;
+      }
+      button {
+        width: fit-content;
+        background-color: $btnColor;
+        border: none;
+        color: $fontColor;
+        padding: 0.8em;
+        border-radius: 0.4em;
+        margin: 1em 0em;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        font-size: 0.95em;
+
+        &:hover {
+          background-color: $accentColor;
+        }
+      }
+    }
+  }
+}

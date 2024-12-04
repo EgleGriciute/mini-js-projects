@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 3em;
+  text-indent: 1em;
+}
+
+.changeTableStyle {
+  width: 113.5%;
+  margin-left: -1.5em;
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+}
+
+.hideContent {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+main {
+  height: 100vh;
+}
+main .calculatorContainer {
+  flex-direction: column;
+  background-color: #005390;
+  height: 20em;
+  width: 25em;
+  padding: 2em 1.5em 1.5em 1.5em;
+}
+main .calculatorContainer .calculatroHeader {
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+main .calculatorContainer .calculatroHeader hr {
+  width: 100%;
+}
+main .calculatorContainer .calculatorBody .calculatorBody-height {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+main .calculatorContainer .calculatorBody .calculatorBody-weight {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+main .calculatorContainer .calculatorBody button {
+  width: 100%;
+  background-color: #db6502;
+  border: none;
+  color: #fff;
+  padding: 0.8em;
+  border-radius: 0.4em;
+  margin: 1em 0em;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 0.95em;
+}
+main .calculatorContainer .calculatorBody button:hover {
+  background-color: #9d0191;
+}
+main .calculatorContainer .calculatorFooter {
+  background-color: #005390;
+}
+main .calculatorContainer .calculatorFooter .calculatorFooter-default {
+  color: #fff;
+}
+main .calculatorContainer .calculatorFooter button {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #9d0191;
+  border: none;
+  color: #fff;
+  padding: 0.8em;
+  border-radius: 0.4em;
+  margin: 1em 0em;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 0.95em;
+}
+main .calculatorContainer .calculatorFooter button:hover {
+  background-color: #db6502;
+}/*# sourceMappingURL=main.css.map */

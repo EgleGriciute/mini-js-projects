@@ -1,4 +1,4 @@
-// Select DOM elements
+// Select DOM elements:
 const counter = document.querySelector(".count");
 const allBtns = document.querySelectorAll(".buttonsContainer");
 
@@ -24,7 +24,7 @@ function updateCounterColor() {
   }
 }
 
-// ExecutE functionality:
+// Execute functionality:
 
 subtractBtn.addEventListener("click", () => {
   counter.textContent--;
