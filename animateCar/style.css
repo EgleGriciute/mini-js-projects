@@ -1,0 +1,77 @@
+/* Reset default styles and enable consistent box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the animation, ensures full-screen size */
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Car container to group car elements */
+.car {
+  position: relative;
+}
+
+/* Background road image styling */
+.imgRoad {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Car image styling */
+.imgCar {
+  position: absolute;
+  width: 20%;
+  top: 70vh;
+  animation: carMoving 2.5s infinite;
+}
+
+/* Keyframe animation for moving the car across the screen */
+@keyframes carMoving {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(550%);
+  }
+}
+
+/* Responsive styles for laptops and desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .imgCar {
+    top: 72vh;
+  }
+}
+
+/* Responsive styles for tablets and iPads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .imgCar {
+    top: 76vh;
+    width: 25%;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 767px) {
+  .imgCar {
+    top: 72vh;
+    width: 30%;
+  }
+}
+
+/* Responsive styles for small phones */
+@media (max-width: 480px) {
+  .imgCar {
+    top: 73vh;
+    width: 35%;
+  }
+}
